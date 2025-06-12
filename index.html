@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesia | Pracuj v Office Roka</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container page-wrapper">
+        <header class="d-flex justify-content-start align-items-center py-3">
+            <a href="index.html">
+                <img src="https://i.ibb.co/8gLgpPpS/3.png" alt="Profesia Logo" class="header-logo">
+            </a>
+            <div class="slogan ms-4">
+                SPREVÁDZAME ĽUDÍ
+                <span>NA CESTE K NOVEJ PRÁCI</span>
+            </div>
+        </header>
+
+        <section class="hero-section">
+        </section>
+
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="active">Domov</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="kultura.html">Naša firemná kultúra</a></li>
+                <li><a href="forum.html">Fórum práce</a></li>
+                <li><a href="brigady.html">Brigády</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" aria-label="Přepnout tmavý/světlý režim" class="theme-toggle">
+            <span id="theme-icon">🌙</span>
+        </button>
+
+        <main>
+            <section id="kto-sme" class="content-section">
+                <h2 class="section-title">KTO SME</h2>
+            <p>
+            Už 27 rokov sprevádzame ľudí na ceste k novej práci. Naším poslaním je prinášať odpovede na všetky otázky o práci. Prevádzkujeme najnavštevovanejší pracovný portál na Slovensku — Profesia.sk — a do nášho portfólia patria aj ďalšie produkty zamerané na skvalitňovanie pracovného prostredia, ako <b>Platy.sk</b> s informáciami o platoch a benefitoch či <b>Slujobs.sk</b> s pracovnými miestami v zahraničí. Každý rok sa snažíme vylepšovať prostredie, v ktorom <b>Profesia</b> pôsobí — ďalej ho rozširujeme, meníme a spájame. Viac o nás nájdete na našej <a href="#">firemnej stránke</a>. Okrem Slovenska pôsobíme aj na českom trhu a od roku 2012 sme súčasťou fínskej mediálnej skupiny Alma Media.
+            </p>
+            </section>
+
+            <section id="volne-miesta" class="content-section">
+                <h2 class="section-title">VOĽNÉ PRACOVNÉ MIESTA</h2>
+                <div class="job-listings" id="job-listings">
+                    <!-- Nabídky práce budou načteny dynamicky -->
+                </div>
+            </section>
+
+            <section id="benefity" class="content-section">
+                <h2 class="section-title">BENEFITY</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <svg width="48" height="48" fill="none" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" stroke="#ffb300" stroke-width="4"/><path d="M24 14v12l8 4" stroke="#ffb300" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <p>Výkonnostný bonus</p>
+                    </div>
+                    <div class="benefit-item">
+                        <svg width="48" height="48" fill="none" viewBox="0 0 48 48"><rect x="8" y="8" width="32" height="32" rx="8" stroke="#ffb300" stroke-width="4"/><path d="M16 24h16M24 16v16" stroke="#ffb300" stroke-width="3" stroke-linecap="round"/></svg>
+                        <p>Voliteľné benefity (Cafeteria) alebo Multisport karta</p>
+                    </div>
+                    <div class="benefit-item">
+                        <svg width="48" height="48" fill="none" viewBox="0 0 48 48"><ellipse cx="24" cy="32" rx="16" ry="8" stroke="#ffb300" stroke-width="4"/><ellipse cx="24" cy="16" rx="8" ry="4" stroke="#ffb300" stroke-width="4"/></svg>
+                        <p>Stravné</p>
+                    </div>
+                    <div class="benefit-item">
+                        <svg width="48" height="48" fill="none" viewBox="0 0 48 48"><rect x="8" y="16" width="32" height="20" rx="6" stroke="#ffb300" stroke-width="4"/><path d="M16 16V8h16v8" stroke="#ffb300" stroke-width="3"/></svg>
+                        <p>Flexibilný pracovný čas</p>
+                    </div>
+                    <div class="benefit-item">
+                        <svg width="48" height="48" fill="none" viewBox="0 0 48 48"><path d="M12 36l24-24M12 12h24v24" stroke="#ffb300" stroke-width="4"/></svg>
+                        <p>Zľava na vybrané produkty</p>
+                    </div>
+                    <div class="benefit-item">
+                        <svg width="48" height="48" fill="none" viewBox="0 0 48 48"><rect x="12" y="12" width="24" height="24" rx="8" stroke="#ffb300" stroke-width="4"/><path d="M24 20v8" stroke="#ffb300" stroke-width="3" stroke-linecap="round"/></svg>
+                        <p>Sick days</p>
+                    </div>
+                    <div class="benefit-item">
+                        <svg width="48" height="48" fill="none" viewBox="0 0 48 48"><path d="M24 8v32M8 24h32" stroke="#ffb300" stroke-width="4"/><circle cx="24" cy="24" r="8" stroke="#ffb300" stroke-width="3"/></svg>
+                        <p>Doplnkové dôchodkové sporenie s príspevkom</p>
+                    </div>
+                    <div class="benefit-item">
+                        <svg width="48" height="48" fill="none" viewBox="0 0 48 48"><rect x="12" y="20" width="24" height="16" rx="6" stroke="#ffb300" stroke-width="4"/><path d="M24 20v-8" stroke="#ffb300" stroke-width="3"/></svg>
+                        <p>Masáže na pracovisku za zvýhodnenú cenu</p>
+                    </div>
+                    <div class="benefit-item">
+                        <svg width="48" height="48" fill="none" viewBox="0 0 48 48"><path d="M24 40V8M24 8l8 8M24 8l-8 8" stroke="#ffb300" stroke-width="4"/></svg>
+                        <p>Príležitosti medzinárodného kariérneho rastu</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reference zaměstnanců -->
+            <section id="reference" class="content-section">
+                <h2 class="section-title">REFERENCE ZAMĚSTNANCŮ</h2>
+                <div class="references-grid">
+                    <div class="reference-item">
+                        <div class="reference-photo"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Zaměstnanec 1"></div>
+                        <blockquote>„Ve společnosti Profesia jsem našel nejen práci, ale i skvělý tým a možnost růstu.“</blockquote>
+                        <div class="reference-name">Martin, Front-end Developer</div>
+                    </div>
+                    <div class="reference-item">
+                        <div class="reference-photo"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Zaměstnanec 2"></div>
+                        <blockquote>„Oceňuji flexibilitu a benefity, které mi umožňují lépe sladit práci a rodinu.“</blockquote>
+                        <div class="reference-name">Petra, HR Specialistka</div>
+                    </div>
+                    <div class="reference-item">
+                        <div class="reference-photo"><img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Zaměstnanec 3"></div>
+                        <blockquote>„Firemní kultura je tu opravdu přátelská a inspirativní.“</blockquote>
+                        <div class="reference-name">Ján, Marketing</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="kontakt" class="content-section">
+                 <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="section-title">KONTAKT</h2>
+                        <p>
+                            <b>Profesia spol. s r.o.</b><br>
+                            Pribinova 19,<br>
+                            811 09 Bratislava
+                        </p>
+                        <p>
+                            Tel.: +421 902 123 456<br>
+                            E-mail: <a href="mailto:info@profesia.sk">info@profesia.sk</a><br>
+                            Firma: profesia.sk
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="map-placeholder">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.333333383501!2d17.1260423156491!3d48.14449997922448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c895c8e2277c7%3A0x8979d6e8e81cdf2c!2sPribinova%2019%2C%20811%2009%20Bratislava%2C%20Slovensko!5e0!3m2!1ssk!2ssk!4v1678886400000!5m2!1ssk!2ssk" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="https://i.ibb.co/bg56c0hk/5-removebg-preview.png" alt="Profesia Footer Logo" class="footer-logo">
+            <div class="footer-info">
+                Profesia spol. s r.o.<br>
+                Pribinova 19, 811 09 Bratislava<br>
+                Tel.: +421 902 123 456
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <!-- Action Chat Button & Chat Window -->
+    <button id="action-chat-btn" aria-label="Zeptejte se na práci">
+        💬
+    </button>
+    <div id="chat-popup" class="chat-popup">
+        <div class="chat-header">
+            <span>Poradíme s výběrem práce</span>
+            <button id="chat-close" aria-label="Zavřít chat">&times;</button>
+        </div>
+        <div class="chat-body">
+            <label for="chat-interest">Co tě baví nebo zajímá?</label>
+            <input type="text" id="chat-interest" placeholder="Např. práce s lidmi, technologie, kreativita...">
+
+            <label for="chat-skills" class="mt-2">Jaké máš silné stránky nebo dovednosti?</label>
+            <input type="text" id="chat-skills" placeholder="Např. komunikace, analytické myšlení, práce v týmu...">
+
+            <label for="chat-values" class="mt-2">Na čem ti v práci záleží?</label>
+            <input type="text" id="chat-values" placeholder="Např. smysluplnost, flexibilita, kariérní růst...">
+
+            <label for="chat-location" class="mt-2">Kde bys chtěl/a pracovat?</label>
+            <input type="text" id="chat-location" placeholder="Město, region, remote...">
+
+            <button id="chat-send" class="btn btn-primary mt-3">Zjistit možnosti</button>
+        </div>
+    </div>
+    <style>
+    /* Action button vpravo dole */
+    #action-chat-btn {
+        position: fixed;
+        right: 32px;
+        bottom: 32px;
+        z-index: 9999;
+        background: #f9bf35;
+        color: #222;
+        border: none;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        font-size: 2rem;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+        cursor: pointer;
+        transition: background 0.2s, box-shadow 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #action-chat-btn:hover {
+        background: #e94e1b;
+        color: #fff;
+        box-shadow: 0 6px 24px rgba(0,0,0,0.22);
+    }
+    .chat-popup {
+        display: none;
+        position: fixed;
+        right: 32px;
+        bottom: 100px;
+        width: 320px;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+        z-index: 10000;
+        padding: 0;
+        overflow: hidden;
+        font-family: "Lato", sans-serif;
+        border: 1px solid #f9bf35;
+    }
+    .chat-header {
+        background: #f9bf35;
+        color: #222;
+        padding: 12px 16px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .chat-header button {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: #222;
+        cursor: pointer;
+        line-height: 1;
+    }
+    .chat-body {
+        padding: 18px 16px 16px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .chat-body input[type="text"] {
+        padding: 8px 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        margin-top: 4px;
+    }
+    .chat-body button {
+        align-self: flex-end;
+    }
+    @media (max-width: 500px) {
+        #action-chat-btn, .chat-popup {
+            right: 12px;
+        }
+        .chat-popup {
+            width: 95vw;
+            min-width: 0;
+        }
+    }
+    body.dark-mode #action-chat-btn {
+        background: #222;
+        color: #ffd54f;
+    }
+    body.dark-mode #action-chat-btn:hover {
+        background: #444;
+        color: #fff;
+    }
+    body.dark-mode .chat-popup {
+        background: #222;
+        color: #fff;
+        border-color: #ffd54f;
+    }
+    body.dark-mode .chat-header {
+        background: #ffd54f;
+        color: #222;
+    }
+    body.dark-mode .chat-body input[type="text"] {
+        background: #333;
+        color: #fff;
+        border: 1px solid #555;
+    }
+    </style>
+    <script>
+    // Dark/Light mode toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    function setTheme(dark) {
+        document.body.classList.toggle('dark-mode', dark);
+        themeIcon.textContent = dark ? '☀️' : '🌙';
+        localStorage.setItem('theme', dark ? 'dark' : 'light');
+    }
+    themeToggle.addEventListener('click', () => {
+        setTheme(!document.body.classList.contains('dark-mode'));
+    });
+    if (localStorage.getItem('theme') === 'dark') setTheme(true);
+
+    // Action chat button logic
+    const chatBtn = document.getElementById('action-chat-btn');
+    const chatPopup = document.getElementById('chat-popup');
+    const chatClose = document.getElementById('chat-close');
+    const chatSend = document.getElementById('chat-send');
+    const chatInput = document.getElementById('chat-interest');
+    const chatSkills = document.getElementById('chat-skills');
+    const chatValues = document.getElementById('chat-values');
+    const chatLocation = document.getElementById('chat-location');
+
+    chatBtn.addEventListener('click', () => {
+        chatPopup.style.display = 'block';
+        chatInput.focus();
+    });
+    chatClose.addEventListener('click', () => {
+        chatPopup.style.display = 'none';
+    });
+    chatSend.addEventListener('click', () => {
+        const zajmy = chatInput.value.trim();
+        const dovednosti = chatSkills.value.trim();
+        const hodnoty = chatValues.value.trim();
+        const lokalita = chatLocation.value.trim();
+
+        if(zajmy || dovednosti || hodnoty || lokalita) {
+            // Sestavení promptu
+            let prompt = "Poradíš mi, jaká práce by mě mohla bavit?\n";
+            if(zajmy) prompt += `Moje zájmy: ${zajmy}.\n`;
+            if(dovednosti) prompt += `Moje silné stránky/dovednosti: ${dovednosti}.\n`;
+            if(hodnoty) prompt += `Na čem mi v práci záleží: ${hodnoty}.\n`;
+            if(lokalita) prompt += `Preferovaná lokalita: ${lokalita}.\n`;
+            prompt += "Navrhni mi konkrétní pracovní pozice nebo oblasti, které by pro mě mohly být vhodné, a stručně vysvětli proč.";
+
+            const url = 'https://www.perplexity.ai/?q=' + encodeURIComponent(prompt);
+            window.open(url, '_blank');
+            chatPopup.style.display = 'none';
+            chatInput.value = '';
+            chatSkills.value = '';
+            chatValues.value = '';
+            chatLocation.value = '';
+        } else {
+            chatInput.focus();
+        }
+    });
+    [chatInput, chatSkills, chatValues, chatLocation].forEach(input => {
+        input.addEventListener('keydown', (e) => {
+            if(e.key === 'Enter') chatSend.click();
+        });
+    });
+    // Zavřít chat kliknutím mimo popup
+    document.addEventListener('mousedown', (e) => {
+        if (chatPopup.style.display === 'block' && !chatPopup.contains(e.target) && e.target !== chatBtn) {
+            chatPopup.style.display = 'none';
+        }
+    });
+
+    // Dynamické načtení nabídek práce ze souboru nabidky/nabidky.json
+    fetch('nabidky/nabidky.json')
+    .then(response => response.json())
+    .then(jobs => {
+        const listings = document.getElementById('job-listings');
+        listings.innerHTML = '';
+        jobs.forEach(job => {
+            const item = document.createElement('div');
+            item.className = 'job-item';
+            item.innerHTML = `
+                <div class="job-info">
+                    <span class="job-title">${job.title}</span>
+                </div>
+                <div class="job-location">${job.location}</div>
+                <a href="nabidky/${job.file}" class="btn btn-offer">Pozrieť ponuku</a>
+            `;
+            listings.appendChild(item);
+        });
+    });
+    </script>
+<!-- ...konec souboru... -->
