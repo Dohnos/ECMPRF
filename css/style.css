@@ -1,0 +1,507 @@
+html, body {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  font-family: "Lato", sans-serif;
+  color: #222;
+  background-color: #fff;
+}
+.page-wrapper {
+  flex: 1 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  padding: 0;
+  font-size: 0;
+}
+.page-wrapper > * {
+  font-size: 1rem;
+}
+main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+  background: #7e7b7b;
+  color: #fff;
+  padding: 20px 0;
+}
+body, .page-wrapper, main {
+  background: #fff;
+}
+.container {
+  max-width: 1034px;
+}
+a {
+  color: #e94e1b;
+  text-decoration: none;
+}
+a:hover {
+  color: #b53a13;
+  text-decoration: underline;
+}
+.content-section {
+  padding: 40px 30px;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #f9bf35;
+}
+.header-logo {
+  height: 50px;
+}
+.slogan {
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+.slogan span {
+  display: block;
+  font-size: 1.5rem;
+}
+.hero-section {
+  background: url("https://i.ibb.co/tPk8Myw3/2.png") no-repeat center center;
+  background-size: contain;
+  min-height: 180px;
+  height: 350px;
+  max-height: 350px;
+  display: block;
+  line-height: 0;
+  padding-left: 50px;
+  color: #222;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.hero-section .hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin: 0;
+  color: #222;
+}
+.hero-section .hero-text p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #222;
+}
+.main-nav {
+  background-color: #f9bf35;
+  margin-top: 0;
+  padding-top: 0;
+  display: block;
+  line-height: 1;
+}
+.main-nav .nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.main-nav .nav-list li {
+  border-right: 1px solid #fff2c7;
+}
+.main-nav .nav-list li:last-child {
+  border-right: none;
+}
+.main-nav .nav-list li a {
+  display: block;
+  padding: 15px 25px;
+  color: #222;
+  font-weight: 700;
+  text-decoration: none;
+  background: none;
+  transition: background 0.2s, color 0.2s;
+}
+.main-nav .nav-list li a.active,
+.main-nav .nav-list li a {
+  background-color: #f9bf35;
+  color: #222;
+}
+.main-nav .nav-list li a:hover {
+  background-color: #e94e1b;
+  color: #fff;
+}
+.job-listings .job-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  background: none;
+  transition: background 0.2s;
+}
+.job-listings .job-item.selected, .job-listings .job-item:active {
+  background: #ffe9a7;
+}
+.job-listings .job-item .job-info {
+  flex-grow: 1;
+}
+.job-listings .job-item .job-title {
+  font-weight: 700;
+  display: block;
+  color: #222;
+}
+.job-listings .job-item .job-desc {
+  font-size: 0.9rem;
+  color: #777;
+}
+.job-listings .job-item .job-location {
+  min-width: 200px;
+  padding: 0 20px;
+  color: #000000;
+}
+.job-listings .job-item .btn-offer {
+  background-color: #f9bf35;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 700;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+.job-listings .job-item .btn-offer:hover,
+.job-listings .job-item .btn-offer:focus,
+.job-listings .job-item .btn-offer:active {
+  background-color: #fff;
+  color: #ffb300;
+  border: 1px solid #ffb300;
+}
+.job-listings .job-item:hover {
+  background-color: #ffb300;
+  color: #fff;
+}
+.job-listings .job-item:hover .job-title,
+.job-listings .job-item:hover .job-desc,
+.job-listings .job-item:hover .job-location {
+  color: #fff;
+}
+.job-listings .job-item:hover .btn-offer {
+  background-color: #fff;
+  color: #ffb300;
+  border: 1px solid #fff;
+}
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.benefits-grid .benefit-item {
+  text-align: center;
+}
+.benefits-grid .benefit-item img {
+  max-height: 60px;
+  margin-bottom: 15px;
+  filter: brightness(0) saturate(100%) invert(74%) sepia(97%) saturate(749%) hue-rotate(353deg) brightness(99%) contrast(97%);
+}
+.benefits-grid .benefit-item p {
+  color: #000;
+  font-weight: 700;
+}
+
+/* Animace a efekty pro benefity */
+.benefit-item {
+  transition: transform 0.25s cubic-bezier(0.4,0,0.2,1), box-shadow 0.25s cubic-bezier(0.4,0,0.2,1), background 0.25s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border-radius: 16px;
+  background: #fff;
+  cursor: pointer;
+}
+.benefit-item:hover, .benefit-item:focus {
+  transform: translateY(-8px) scale(1.04) rotate(-2deg);
+  box-shadow: 0 8px 24px rgba(255,179,0,0.18), 0 2px 8px rgba(0,0,0,0.08);
+  background: #fffbe6;
+}
+
+/* Reference zaměstnanců */
+.references-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.reference-item {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  max-width: 320px;
+  text-align: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.reference-item:hover {
+  box-shadow: 0 8px 32px rgba(255,179,0,0.15), 0 2px 8px rgba(0,0,0,0.10);
+  transform: translateY(-6px) scale(1.03);
+}
+.reference-photo img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #ffb300;
+}
+.reference-name {
+  font-weight: bold;
+  color: #ffb300;
+  margin-top: 0.5rem;
+}
+blockquote {
+  font-style: italic;
+  color: #444;
+  margin: 0 0 0.5rem 0;
+}
+
+/* Tmavý režim */
+body.dark-mode {
+  background: #181a1b !important;
+  color: #fff !important;
+}
+body.dark-mode, body.dark-mode .page-wrapper, body.dark-mode main, body.dark-mode .content-section {
+  background: #181a1b !important;
+  color: #fff !important;
+}
+body.dark-mode .benefit-item,
+body.dark-mode .reference-item {
+  background: #232526 !important;
+  color: #fff !important;
+}
+body.dark-mode .benefit-item:hover,
+body.dark-mode .benefit-item:focus {
+  background: #2d2f31 !important;
+}
+body.dark-mode .reference-item:hover {
+  box-shadow: 0 8px 32px rgba(255,179,0,0.10), 0 2px 8px rgba(0,0,0,0.18);
+}
+body.dark-mode .reference-name {
+  color: #ffd54f !important;
+}
+body.dark-mode .section-title {
+  color: #ffd54f !important;
+}
+body.dark-mode .footer {
+  background: #181a1b !important;
+  color: #fff !important;
+}
+body.dark-mode .footer-logo {
+  filter: brightness(0.8);
+}
+body.dark-mode .theme-toggle {
+  background: rgba(35,37,38,0.95);
+  color: #ffd54f;
+}
+body.dark-mode .theme-toggle:hover, body.dark-mode .theme-toggle:focus {
+  background: #ffd54f;
+  color: #232526;
+}
+body.dark-mode a { color: #ffd54f !important; }
+body.dark-mode a:hover { color: #ffb300 !important; }
+body.dark-mode .main-nav {
+  background: #232526 !important;
+}
+body.dark-mode .main-nav .nav-list li a {
+  background: #232526 !important;
+  color: #fff !important;
+}
+body.dark-mode .main-nav .nav-list li a.active,
+body.dark-mode .main-nav .nav-list li a:hover {
+  background: #181a1b !important;
+  color: #ffd54f !important;
+}
+body.dark-mode .job-listings .job-item {
+  background: #232526 !important;
+  color: #fff !important;
+  border-color: #232526 !important;
+}
+body.dark-mode .job-listings .job-item .job-title {
+  color: #ffd54f !important;
+}
+body.dark-mode .job-listings .job-item .job-location {
+  color: #fff !important;
+}
+body.dark-mode .job-listings .job-item .btn-offer {
+  background: #232526 !important;
+  color: #ffd54f !important;
+  border: 1px solid #ffd54f !important;
+}
+body.dark-mode .job-listings .job-item .btn-offer:hover {
+  background: #ffd54f !important;
+  color: #232526 !important;
+}
+body.dark-mode .benefits-grid svg {
+  filter: brightness(0.8) drop-shadow(0 0 2px #ffd54f);
+}
+body.dark-mode .reference-photo img {
+  border-color: #ffd54f !important;
+}
+body.dark-mode .map-placeholder iframe {
+  filter: grayscale(1) brightness(0.7);
+}
+body.dark-mode .slogan {
+  color: #ffd54f !important;
+}
+body.dark-mode #kontakt {
+  background: #232526 !important;
+  color: #fff !important;
+}
+body.dark-mode .benefits-grid .benefit-item p {
+  color: #fff !important;
+}
+body.dark-mode blockquote {
+  color: #ccc !important;
+}
+#kontakt {
+  background-color: #fff;
+}
+#kontakt b {
+  font-weight: 700;
+}
+#kontakt .map-placeholder iframe {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+.footer .footer-logo {
+  height: 80px;
+}
+.footer .footer-info {
+  text-align: right;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.footer .container {
+  max-width: 1034px;
+  margin: 0 auto;
+}
+.theme-toggle {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  background: rgba(255,255,255,0.85);
+  color: #222;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-size: 1.25rem;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  outline: none;
+  padding: 0;
+}
+.theme-toggle:hover, .theme-toggle:focus {
+  background: #ffb300;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(255,179,0,0.18);
+}
+body.dark-mode .theme-toggle {
+  background: rgba(35,37,38,0.95);
+  color: #ffd54f;
+}
+body.dark-mode .theme-toggle:hover, body.dark-mode .theme-toggle:focus {
+  background: #ffd54f;
+  color: #232526;
+}
+@media (max-width: 992px) {
+  .job-listings .job-item .job-location {
+    min-width: 150px;
+  }
+  .hero-section {
+    padding-left: 20px;
+    height: 250px;
+    min-height: 120px;
+    max-height: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section {
+    padding-left: 10px;
+    height: 200px;
+    min-height: 100px;
+    max-height: 200px;
+  }
+  .main-nav .nav-list {
+    flex-direction: column;
+  }
+  .main-nav .nav-list li {
+    border-right: none;
+    border-bottom: 1px solid #fff2c7;
+    text-align: center;
+  }
+  .job-listings .job-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .job-listings .job-item .job-location {
+    padding: 0;
+  }
+  .job-listings .job-item .btn-offer {
+    align-self: flex-start;
+  }
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer .container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .footer .container .footer-info {
+    text-align: center;
+  }
+  .theme-toggle {
+    top: 10px;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 576px) {
+  .header-logo {
+    height: 40px;
+  }
+  .slogan {
+    font-size: 0.9rem;
+  }
+  .slogan span {
+    font-size: 1.2rem;
+  }
+  .content-section {
+    padding: 30px 15px;
+  }
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-section {
+    padding-left: 5px;
+    height: 150px;
+    min-height: 80px;
+    max-height: 150px;
+  }
+}
