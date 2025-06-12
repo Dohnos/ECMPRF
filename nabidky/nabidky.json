@@ -1,0 +1,32 @@
+[
+  {
+    "title": "FRONT - END Developer",
+    "location": "Bratislava",
+    "file": "frontend.html"
+  },
+  {
+    "title": "Pozie recepčnej, výpomoc v administratíve a zastupovanie počas materskej",
+    "location": "Bratislava",
+    "file": "recepcna.html"
+  },
+  {
+    "title": "BACK-END Dev.",
+    "location": "Bratislava",
+    "file": "backend.html"
+  },
+  {
+    "title": "Marketing guru",
+    "location": "Topoľčany, Nitra, Bratislava",
+    "file": "marketing.html"
+  },
+  {
+    "title": "Support specialist",
+    "location": "Bratislava",
+    "file": "support.html"
+  },
+  {
+    "title": "Marketing guru",
+    "location": "Bratislava",
+    "file": "marketing.html"
+  }
+]
