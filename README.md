@@ -1,4 +1,4 @@
-# PROFESIA.SK
+# ECMPRF
 
 Tento projekt je ukázkový web pro prezentaci různých oblastí pracovního a společenského života ve společnosti Profesia. Web je určen jako jednoduchý portál pro studenty, absolventy nebo zájemce o brigády, pracovní nabídky, kulturní akce a komunitní dění.
 
